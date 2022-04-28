@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using PLA.Domain.Crop.Respository;
 using PLA.Domain.Crop.Services;
 using PLA.Domain.Inventory.Repository;
@@ -12,10 +13,18 @@ using PLA.Infrastructure.Database.Services;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
+var MyAllowAllOrigins = "_myAllowSpecificOrigins";
 
 builder.Services.AddControllers();
-
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: MyAllowAllOrigins,
+                      policy =>
+                      {
+                          policy.AllowAnyOrigin();
+                      });
+});
 builder.Services.AddSwaggerGen();
 var dbConnectionString = @builder.Configuration.GetValue<string>("Database:ConnectionString");
 builder.Services.AddDbContext<BaseDbContext>(options => options.UseMySql(dbConnectionString, ServerVersion.AutoDetect(dbConnectionString)));
@@ -32,6 +41,7 @@ builder.Services.AddControllers().AddJsonOptions(x =>
 var app = builder.Build();
 
 app.UseSwagger();
+app.UseCors(MyAllowAllOrigins);
 app.UseSwaggerUI();
 app.UseHttpsRedirection();
 app.UseAuthorization();
