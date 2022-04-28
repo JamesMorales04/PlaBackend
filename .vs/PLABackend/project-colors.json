@@ -1,0 +1,56 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "14aa6253-6071-4b98-bae9-3d7053b0d932": {
+      "ProjectGuid": "14aa6253-6071-4b98-bae9-3d7053b0d932",
+      "DisplayName": "PLA.Infraestructure",
+      "ColorIndex": 0
+    },
+    "35efd835-05b0-48d4-b099-83c18ec15652": {
+      "ProjectGuid": "35efd835-05b0-48d4-b099-83c18ec15652",
+      "DisplayName": "PLA.Domain",
+      "ColorIndex": 1
+    },
+    "e14af973-d739-4c6d-a39b-0f0207654ca1": {
+      "ProjectGuid": "e14af973-d739-4c6d-a39b-0f0207654ca1",
+      "DisplayName": "PLA.WebAPI",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Archivos varios",
+      "ColorIndex": -1
+    },
+    "9f2053e6-9207-4b2d-9bf2-308ef779efe8": {
+      "ProjectGuid": "9f2053e6-9207-4b2d-9bf2-308ef779efe8",
+      "DisplayName": "PLA.WebApi.UnitTest",
+      "ColorIndex": 3
+    },
+    "e9a9cf42-c1ec-423d-800c-f3511b051d11": {
+      "ProjectGuid": "e9a9cf42-c1ec-423d-800c-f3511b051d11",
+      "DisplayName": "PLA.WebAPI",
+      "ColorIndex": 4
+    },
+    "97909197-af58-4bf3-9d06-c2bdf554e2cf": {
+      "ProjectGuid": "97909197-af58-4bf3-9d06-c2bdf554e2cf",
+      "DisplayName": "PLA.WebApi.UnitTest",
+      "ColorIndex": 5
+    },
+    "8796ed70-e654-4e0d-83b1-9cfa4cdd2dfe": {
+      "ProjectGuid": "8796ed70-e654-4e0d-83b1-9cfa4cdd2dfe",
+      "DisplayName": "PLA.Infrastructure",
+      "ColorIndex": 6
+    },
+    "f6ced28b-3940-4632-a211-e55b85d15bd9": {
+      "ProjectGuid": "f6ced28b-3940-4632-a211-e55b85d15bd9",
+      "DisplayName": "PLA.Domain",
+      "ColorIndex": 7
+    },
+    "4484b102-7ee1-4808-8396-d871e494513d": {
+      "ProjectGuid": "4484b102-7ee1-4808-8396-d871e494513d",
+      "DisplayName": "PLA.Infrastructure",
+      "ColorIndex": 8
+    }
+  },
+  "NextColorIndex": 9
+}
